@@ -1,0 +1,7 @@
+def any_string_length_5(strings):
+    return any(len(s) == 5 for s in strings)
+
+#Eksempel på strings med 5 verdier
+strings = ["Telefon", "Epler", "Datamaskin", "Gryte"]
+result = any_string_length_5(strings)
+print(result)
