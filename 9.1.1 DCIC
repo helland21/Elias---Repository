@@ -1,0 +1,6 @@
+def moon_weight(earth_weight):
+    "Compute weight on moon from weight on earth"
+    
+    return earth_weight * (1/6)
+
+print(moon_weight(100)) #Forventet output 16.66  
