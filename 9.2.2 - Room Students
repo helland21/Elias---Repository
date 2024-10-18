@@ -1,0 +1,21 @@
+# 1. Kartleggelse av rom som har et spesifikt antall seter
+rooms = {
+    "Room Alfa": 70,
+    "Room Beta": 60,
+    "Room Catrine": 85,
+    "Room David": 40,
+    "Room Elias": 15
+    }
+
+# Seter i spesifikt rom
+seats_in_room_David = rooms.get("Room David", "Room not found")
+print(f"Room David has {seats_in_room_David} seats.")
+
+# 2. Øke kapasitet med 10 ekstra seter
+rooms["Room Elias"] += 10
+
+print(f"Room Elias now has {rooms['Room Elias']} seats.")
+
+# 3. Finne rommene som har plass til minst 50 studenter
+store_rooms = [room for room, seats in rooms.items() if seats >= 50]
+print("Rooms der det er plass til 50 studenter", store_rooms)
