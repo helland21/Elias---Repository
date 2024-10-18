@@ -1,0 +1,7 @@
+def sign_to_string(numbers):
+    return ["neg" if num < 0 else "pos" if num > 0 else "zero" for num in numbers]
+
+#Eksempel på nummer
+numbers = [100, -50, 0, 350, -400]
+result = sign_to_string(numbers)
+print(result) # Resultat (pos, neg, zero, pos, neg)
